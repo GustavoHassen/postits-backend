@@ -4,13 +4,13 @@ export const createAccount = async (event) => {
       statusCode: 200,
       body: JSON.stringify({
         message: 'Create account works',
-        input: event
-      })
+        input: event,
+      }),
     }
   } catch (err) {
     return {
       statusCode: 500,
-      body: JSON.stringify(err)
+      body: JSON.stringify(err),
     }
   }
 }
