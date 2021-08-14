@@ -20,8 +20,8 @@ provider:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: src/modules/user/controller.createAccount
     events:
     - http:
-        path: hello
-        method: get
+        path: user/create
+        method: post
